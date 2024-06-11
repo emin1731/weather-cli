@@ -2,23 +2,22 @@ import chalk from "chalk";
 import dedent from "dedent-js";
 
 const printSuccess = (message) => {
-    console.log(chalk.bgGreen("SUCCESS:") + " " + message);
+  console.log(chalk.bgGreen("SUCCESS:") + " " + message);
 };
 
 const printError = (message) => {
-    console.log(chalk.bgRed("ERROR:") + " " + message);
+  console.log(chalk.bgRed("ERROR:") + " " + message);
 };
 
 const printHelp = (message) => {
-    console.log(dedent`
+  console.log(dedent`
     ${chalk.bgCyan("HELP: ")}
     No params - get weather 
-    -s [city] - set city 
+    -c [city] - set city 
     -h - help menu 
     -t [api_key] - set token
 
-` );
+`);
 };
 
-
-export {printError, printSuccess, printHelp};
+export { printError, printSuccess, printHelp };
