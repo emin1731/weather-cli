@@ -1,13 +1,14 @@
 {
-  "name": "simple-weather-cli",
+  "name": "emin-weather-cli",
   "version": "1.0.0",
-  "description": "CLI for getting weather ",
+  "description": "CLI for getting weather",
   "main": "weather.js",
   "bin": {
     "weather": "weather.js"
   },
   "type": "module",
   "scripts": {
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,7 +19,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emin1731/weather-cli"
+    "url": "git+https://github.com/emin1731/weather-cli.git"
   },
   "bugs": {
     "email": "emin.dabakhov@gmail.com"
